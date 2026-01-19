@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E4-M4 — Asincronía (Callbacks / Promesas / Async-Await)</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="badge">E4-M4</p>
+        <h1>Simulación de Consulta a Múltiples APIs</h1>
+        <p class="subtitle">
+          Ejecuta el flujo por <strong>Callbacks</strong>, <strong>Promesas</strong> o
+          <strong>Async/Await</strong> y mira la salida.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Controles</h2>
+        <p class="hint">
+          (Opcional) Conecta estos botones en tu <code>script.js</code> usando los IDs.
+        </p>
+
+        <div class="grid">
+          <button class="btn" id="btn-callbacks" type="button">
+            Ejecutar con Callbacks
+          </button>
+
+          <button class="btn" id="btn-promesas" type="button">
+            Ejecutar con Promesas
+          </button>
+
+          <button class="btn btn-primary" id="btn-async" type="button">
+            Ejecutar con Async/Await
+          </button>
+
+          <button class="btn btn-ghost" id="btn-limpiar" type="button">
+            Limpiar salida
+          </button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head">
+          <h2>Salida</h2>
+          <span class="pill">Console / UI</span>
+        </div>
+
+        <pre class="output" id="output" aria-live="polite">
+Aquí puedes imprimir resultados si quieres (además de la consola).
+        </pre>
+
+        <details class="tips">
+          <summary>Tips</summary>
+          <ul>
+            <li>Si solo usas <strong>console.log</strong>, igual funciona: abre DevTools → Console.</li>
+            <li>Si quieres imprimir aquí, usa: <code>document.getElementById('output').textContent += '...'</code></li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>
+          Hecho para practicar <strong>asincronía</strong> en JavaScript (setTimeout, callbacks, promesas, async/await).
+        </small>
+      </div>
+    </footer>
+
+    <!-- Tu JS (app.js) -->
+    <script src="./script.js"></script>
+  </body>
+</html>
